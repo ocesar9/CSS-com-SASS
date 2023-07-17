@@ -1,0 +1,146 @@
+div {
+	$width: 400px;
+	width: $width;
+	@if $width == 400px {
+		height: $width * 1.5;
+	} @else {
+		height: $width;
+	}
+}
+
+// $gutter: 40px;
+// div {
+// 	$width: 800px;
+// 	width: calc($width - 2*$gutter);
+// 	padding: $gutter;
+// 	height: calc($width / 2);
+// }
+
+%clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+div, section {
+	@extend %clearfix;
+}
+
+.erro {
+	color: red;
+	font-weight: bold;
+}
+
+.button-erro {
+	@extend .erro;
+	padding: 10px;
+	width: 200px;
+	border: 1px solid red;
+	border-radius: 4px;
+}
+
+@mixin title-large {
+	font-size: 4em;
+	font-weight: bold;
+	font-family: monospace;
+	line-height: 1;
+}
+
+@mixin border-box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+@mixin separador($color:pink,$largura:100px){
+	&::after{
+		content: '';
+		display: block;
+		height: 4px;
+		width: $largura;
+		background: $color;
+	}
+}
+
+@mixin box-shadow($shadow...){
+	box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+}
+
+// Definindo media query por Mixin
+@mixin mobile {
+	@media (max-width:600px){
+		@content;
+	}
+}
+
+$roxo : #84e;
+$cor-primaria: blue;
+$font-primaria: monospace;
+$gutter: 60px;
+
+section {
+	max-width: 600px;
+	margin: 0 auto;	
+	@include border-box;
+}
+
+.modal {
+	@include box-shadow(10px 10px 0 0 rgba(0,0,0,.5),
+											15px 15px 0 0 rgba(0,0,0,.5),
+											20px 20px 0 0 rgba(0,0,0,.5) );
+
+	h1.titulo {
+		color: $cor-primaria;
+		font-family: $font-primaria;
+		margin-bottom: $gutter;
+		@include title-large;
+		@include separador($roxo, 100%);
+		@include mobile {
+			color: pink;
+		}
+	}
+	p {
+		font: {
+			size: 1.2em;
+			family: $font-primaria;
+			style: italic;
+		}
+		line-height: 1.4;
+		max-width: 400px;
+		@include mobile {
+			font-size: .8em;
+		}
+	}
+	a {
+		display: block;
+		max-width: 120px;
+		padding: 10px;
+		border-radius: 4px;
+		text-align: center;
+		background: $cor-primaria;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: $font-primaria;
+	}
+}
+
+ul {
+	text-align: center;
+	li {
+		display: inline-block;
+		list-style: none;
+		a {
+			display: block;
+			padding: 20px;
+			text-decoration: none;
+			background: blue;
+			color: white;
+			&:hover, &.active {
+				background: pink;
+			}
+		}
+	}
+}
