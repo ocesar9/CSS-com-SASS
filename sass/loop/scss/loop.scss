@@ -1,0 +1,45 @@
+@use "sass:math";
+
+// Item
+@for $i from 1 through 6 {
+	.item-#{$i} {
+		width: 200px * $i;
+	}
+}
+
+// Grid Container
+$container: 960;
+$gutter: 20;
+$colunas:12;
+@for $i from 1 through $colunas {
+	$width: math.div($container,$colunas) * $i - $gutter;
+	.grid-#{$i} {
+		width: $width + px;
+	}
+}
+
+// Grid Percentage
+@for $i from 1 through 12 {
+	$width: percentage(math.div(1,$i));
+	.grid-#{$i} {
+		width: $width;
+	}
+}
+
+$numero: 1;
+@while $numero <=6 {
+	.type-#{$numero} {
+		font-size: 16 * $numero + px;
+	}
+
+	$numero: $numero + 1;
+}
+
+
+$lista: facebook twitter instagram;
+
+@each $social-media in $lista{
+	.social-media-#{$social-media} {
+		background: url('img/#{$social-media}.png');
+	}
+}
