@@ -1,33 +1,4 @@
 @charset "UTF-8";
-/* ==========================================================================
-   Reset
-   ========================================================================== */
-/**
- * Remove anchor text-decoration
- */
-a {
-  text-decoration: none;
-}
-
-/**
- * Remove list-style
- */
-ol, ul {
-  list-style: none;
-}
-
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, ul {
-  font-size: 1em;
-  font-weight: normal;
-}
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -410,6 +381,35 @@ th {
   padding: 0;
 }
 
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/**
+ * Remove anchor text-decoration
+ */
+a {
+  text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */
+ol, ul {
+  list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -700,11 +700,11 @@ img {
 }
 
 .header_menu ul li a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 .header_menu ul li a.menu_ativo {
-  color: #FFF;
+  color: #fff;
 }
 
 /* Introdução */
@@ -720,7 +720,7 @@ img {
 
 .introducao h1 {
   font-size: 48px;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
