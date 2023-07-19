@@ -574,13 +574,15 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 }
 /* Estilos Gerais */
 body {
+  font-size: 14px;
+  line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 img {
@@ -595,6 +597,7 @@ img {
 #form-erro span, #form-send span {
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   display: block;
 }
@@ -613,6 +616,7 @@ img {
   color: #fec63e;
   font-size: 14px;
   line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -632,6 +636,7 @@ img {
 .subtitulo {
   font-size: 24px;
   line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #000;
@@ -652,6 +657,7 @@ img {
 .subtitulo-interno {
   font-size: 24px;
   line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #000;
@@ -695,6 +701,7 @@ img {
   letter-spacing: 0.1em;
   font-size: 14px;
   line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px 0;
   transition: all 0.3s ease;
 }
@@ -720,6 +727,7 @@ img {
 
 .introducao h1 {
   font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -749,6 +757,8 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -764,6 +774,7 @@ img {
 
 .introducao-interna h1 {
   font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -795,6 +806,7 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
@@ -886,6 +898,7 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
@@ -925,6 +938,7 @@ img {
 .footer h3 {
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fec63e;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1025,6 +1039,7 @@ img {
 .produto_item h2 {
   color: #fff;
   font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -1060,6 +1075,7 @@ img {
   color: #fff;
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   height: 180px;
   padding: 30px 40px;
 }
@@ -1068,7 +1084,8 @@ img {
   background: #fec63e;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   float: left;
   width: 229px;
@@ -1108,9 +1125,9 @@ img {
 .form label {
   display: block;
   color: #fff;
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   line-height: 25px;
+  font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 4px;
 }
 
@@ -1124,6 +1141,7 @@ img {
   margin-bottom: 10px;
   outline: none;
   font-size: 14px;
+  line-height: 20px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1138,6 +1156,7 @@ img {
   margin-bottom: 20px;
   outline: none;
   font-size: 14px;
+  line-height: 20px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1153,6 +1172,7 @@ img {
 .orcamento_dados h3 {
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #fec63e;
   font-weight: bold;
@@ -1161,7 +1181,7 @@ img {
 .orcamento_dados span {
   display: block;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1174,8 +1194,9 @@ img {
 }
 
 .orcamento_dados ul li {
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", serif;
   padding: 10px 15px;
 }
 
@@ -1203,9 +1224,9 @@ img {
 
 .contato_form label {
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   line-height: 25px;
+  font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 4px;
 }
 
@@ -1218,6 +1239,7 @@ img {
   margin-bottom: 10px;
   outline: none;
   font-size: 14px;
+  line-height: 20px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1231,6 +1253,7 @@ img {
   margin-bottom: 20px;
   outline: none;
   font-size: 14px;
+  line-height: 20px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1246,6 +1269,7 @@ img {
 .contato_dados h3 {
   font-size: 18px;
   line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #fec63e;
   font-weight: bold;
@@ -1254,7 +1278,7 @@ img {
 .contato_dados span {
   display: block;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -1315,6 +1339,7 @@ img {
   .produto_info p {
     font-size: 14px;
     line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     height: 122px;
     padding: 20px 30px;
   }
@@ -1354,6 +1379,7 @@ img {
   /*Introducao*/
   .introducao h1 {
     font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .introducao {
     margin-top: 0px;
@@ -1377,11 +1403,13 @@ img {
   .missao_sobre p {
     font-size: 14px;
     line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     padding-right: 0px;
   }
   .missao_sobre ul li {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   /*Produtos*/
   .produto_item h2 {
@@ -1394,6 +1422,7 @@ img {
   .produto_info p {
     font-size: 14px;
     line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     height: auto;
     padding: 20px 30px;
   }
@@ -1402,6 +1431,7 @@ img {
     height: 49px;
     font-size: 14px;
     line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 14px;
   }
   .form {
