@@ -1,4 +1,39 @@
 body {
   background: $bege-claro;
   border: 10px solid $bege-medio;
+  color: $cinza;
+  @include d(s){
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  @include tipo-1(18);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tipo-1(18);
+  text-transform: uppercase;
+  @include d(s){
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 2px;
+    float: right;
+    background: $cinza;
+    @include d(m){
+      width: 60%;
+    }
+  }
 }
