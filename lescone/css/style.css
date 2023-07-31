@@ -141,4 +141,21 @@
   clear: both;
 }
 
+.row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+@media screen and (max-width: 759px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.row::after, .row::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*# sourceMappingURL=style.css.map */
