@@ -13,7 +13,7 @@ $fonte-1: 'PT Mono', monospace;
 $fonte-2: 'Aref Ruqaa', serif;
 
 @function em($pixel, $context:16){
-  @return math.div($pixel, $context) + "em";
+  @return math.div($pixel, $context) + em;
 }
 
 @mixin tipo-1($size){
