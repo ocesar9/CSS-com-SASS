@@ -310,6 +310,11 @@ p {
     letter-spacing: -70px;
   }
 }
+@media screen and (max-width: 759px) {
+  .intro-telefone::after {
+    display: none;
+  }
+}
 
 .aberto {
   display: inline-block;

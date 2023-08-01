@@ -39,6 +39,11 @@
       letter-spacing: -70px;
     }
   }
+  @include d(s){
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .aberto {
